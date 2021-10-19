@@ -10,5 +10,5 @@ recipeList:
       onlyIfUsing: org.junit.jupiter.api.*
       versionPattern: -jre
 
-#  - org.openrewrite.maven.RemoveRedundantDependencyVersions
+  - org.openrewrite.maven.RemoveRedundantDependencyVersions
 
