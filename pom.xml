@@ -19,7 +19,7 @@
 	</parent>
 
 	<properties>
-		<rewrite-maven-plugin.version>4.14.0-SNAPSHOT</rewrite-maven-plugin.version>
+		<rewrite-maven-plugin.version>4.13.0</rewrite-maven-plugin.version>
 	</properties>
 
 	<dependencies>
