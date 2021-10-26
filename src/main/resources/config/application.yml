@@ -1,12 +1,13 @@
 com:
   company:
     other:
-      name: project-test
+      name: project-test  # prueba2
       logging:
         kafka:
-          uniqueTopic: a-topic
+          uniqueTopic: a-topic #pppp
 #TODO bug pending          topic: a-topic #This property disappear
           properties:
-            one.other: true
+            one.other: true  #prueba
+            two.seconds: "darling"
 
 
