@@ -1,32 +1,8 @@
 ---
 type: specs.openrewrite.org/v1beta/recipe
-name: com.yourorg.AddDependencyExample
-displayName: Add Maven dependency example
+name: com.yourorg.AnExample
+displayName: An example
 recipeList:
-#  - org.openrewrite.maven.AddDependency:
-#      groupId: com.google.guava
-#      artifactId: guava
-#      version: 29.X
-#      onlyIfUsing: org.junit.jupiter.api.*
-#      versionPattern: -jre
-#
-#  - org.openrewrite.maven.RemoveRedundantDependencyVersions
-
-#  - org.openrewrite.yaml.DeleteProperty:
-#      propertyKey: com.company.other.name
-#      coalesce: true
-
-  - org.openrewrite.maven.UpgradeParentVersion:
-      groupId: org.springframework.boot
-      artifactId: spring-boot-starter-parent
-      newVersion: 2.3.X
-
-  - org.openrewrite.maven.RemoveDependency:
-      groupId: org.springframework.boot
-      artifactId: spring-boot-starter-web
-
-  - org.openrewrite.maven.AddDependency:
-      groupId: org.springframework.boot
-      artifactId: spring-boot-starter-webflux
-      version: 2.3.X
-      onlyIfUsing: org.springframework.boot.*
+  - org.openrewrite.yaml.ChangePropertyKey:
+      oldPropertyKey: other
+      newPropertyKey: root.stuff1
