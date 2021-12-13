@@ -12,6 +12,7 @@ local.properties
 .loadpath
 .recommenders
 copia-m2
+m2
 
 # External tool builders
 .externalToolBuilders/

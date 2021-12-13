@@ -3,9 +3,12 @@ type: specs.openrewrite.org/v1beta/recipe
 name: com.yourorg.AddDependencyExample
 displayName: Add Maven dependency example
 recipeList:
-  - org.openrewrite.maven.AddDependency:
-      groupId: com.google.guava
-      artifactId: guava
-      version: 29.X
-      onlyIfUsing: org.junit.jupiter.api.*
-      versionPattern: -jre
+  - org.openrewrite.yaml.MergeYaml:
+      key: "$"
+      yaml: >
+        darwin:
+          logging:
+          - 1
+          - 2
+      acceptTheirs: true
+      fileMatcher: "**/application*.yml"
