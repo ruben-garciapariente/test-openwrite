@@ -3,12 +3,19 @@ type: specs.openrewrite.org/v1beta/recipe
 name: com.yourorg.AddDependencyExample
 displayName: Add Maven dependency example
 recipeList:
-  - org.openrewrite.yaml.MergeYaml:
-      key: "$"
-      yaml: >
-        darwin:
-          logging:
-          - 1
-          - 2
-      acceptTheirs: true
-      fileMatcher: "**/application*.yml"
+#  - org.openrewrite.yaml.ChangePropertyKey:
+#      oldPropertyKey: com.key-no-exist
+#      newPropertyKey: com.new-key
+#      fileMatcher: "**/application.yml"
+  - org.openrewrite.yaml.DeleteKey:
+      keyPath: $.com.key2
+      fileMatcher: "**/application.yml"
+#  - org.openrewrite.yaml.MergeYaml:
+#      key: "$"
+#      yaml: |-
+#        darwin:
+#          logging:
+#          - 1
+#          - 2
+#      acceptTheirs: true
+#      fileMatcher: "**/*"
