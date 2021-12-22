@@ -6,9 +6,10 @@ recipeList:
   - org.openrewrite.yaml.MergeYaml:
       key: "$"
       yaml: >
-        darwin:
-          logging:
-          - 1
-          - 2
+        core:
+          - map2:
+              value:
+                - 1
+                - 2
       acceptTheirs: true
       fileMatcher: "**/application*.yml"
