@@ -6,10 +6,6 @@ recipeList:
   - org.openrewrite.yaml.MergeYaml:
       key: "$"
       yaml: |-
-        testino:
-          mmap4:
-            - mmmap1: v111
-              mmmap2: v222
-            - nnmap1: v111
-              nnmap2: v222
+        com:
+          key2: value1
       fileMatcher: "**/application*.yml"
